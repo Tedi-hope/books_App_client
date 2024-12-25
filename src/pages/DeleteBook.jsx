@@ -9,7 +9,7 @@ const DeleteBook = () => {
   const { id }=useParams();
   
   const handleDeleteBook=()=>{
-    axios.delete(`https://books-app-server-one.vercel.app/books/${id}`)
+    axios.delete(`https://books-app-server-ten.vercel.app/books/${id}`)
     .then(()=>{
         navigate('/home')
     })

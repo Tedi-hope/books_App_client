@@ -21,7 +21,7 @@ const CreateBooks = () => {
        image,
      };
      axios
-     .post('https://books-app-server-one.vercel.app/books',data,{
+     .post('https://books-app-server-ten.vercel.app/books',data,{
         headers:{
           'Content-Type':'multipart/form-data',
         }

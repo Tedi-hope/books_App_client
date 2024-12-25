@@ -13,7 +13,7 @@ const EditBook = () => {
   const{id}=useParams();
 
   useEffect(()=>{
-    axios.get(`https://books-app-server-one.vercel.app/books/${id}`)
+    axios.get(`https://books-app-server-ten.vercel.app/books/${id}`)
     .then((response)=>{
       setAuthor(response.data.author);
       setPublishYear(response.data.publishYear);
@@ -32,7 +32,7 @@ const EditBook = () => {
     publishYear,
    };
 
-   axios.put(`https://books-app-server-one.vercel.app/books/${id}`,data)
+   axios.put(`https://books-app-server-ten.vercel.app/books/${id}`,data)
     .then(()=>{
         navigate('/home')
     })

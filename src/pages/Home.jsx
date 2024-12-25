@@ -29,7 +29,7 @@ const Home = () => {
 
   useEffect(()=>{
    axios
-      .get('https://books-app-server-one.vercel.app/books')
+      .get('https://books-app-server-ten.vercel.app/books')
       .then((response)=>{
         setBooks(response.data.data);
       })
